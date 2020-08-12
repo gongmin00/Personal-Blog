@@ -1,0 +1,86 @@
+.nav {
+    // position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:#232a34;
+    height: 4.5rem;
+    width: 100%;
+}
+.avatar {
+    border-radius: 5rem;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0.8rem;  
+    left: 5%;
+} 
+.logo-icon{
+    position: relative;
+    top: -60px;
+    left: 1%;
+}
+.menu-icon{
+    position: relative;
+    top: 0.7rem;
+    left: 78%;
+}
+.search-container {
+    width: 35%;
+    height: 1.5rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 25%;
+    display: flex;
+}
+
+.search-bar {
+    width: 15rem;
+    height: 1.5rem;
+    border: 0;
+    padding: 0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    z-index: 1;
+    border: none;
+    outline: none;
+}
+
+.search-button {
+    border: none;
+    width: 1.5rem;
+    background-color: #fff;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius:6px;
+}
+
+.nav-bar {
+    position: absolute;
+    top: 1.5rem;
+    left: 60%;
+    width: 30rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-item {
+    width: 4.5rem;
+    height: 1.5rem;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    cursor: pointer;
+}
+
+.facebook-icon {
+    color:#3aa1f2;
+}
+.linkedIn-icon {
+    color:#2187f3;
+}
+
+.twitter-icon{
+    color:#3aa1f2;
+}

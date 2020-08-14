@@ -1,7 +1,6 @@
-
-const initialState = {
-        allData:[]
-    }
+const initialState={
+    allData:[]
+}
 const allReducer =(state=initialState, action)=>{
     switch (action.type){
         case"GET_ALLDATA_BY_SLUG":
@@ -9,10 +8,11 @@ const allReducer =(state=initialState, action)=>{
             ...state
         }
         case"GET_ALLDATA":
-        return {
+        return{
             ...state,
             allData:action.payload
         }
+
         case "GET_ALLDATA_NAV":
             return {
                 ...state

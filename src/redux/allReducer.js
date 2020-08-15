@@ -10,7 +10,7 @@ const allReducer =(state=initialState, action)=>{
         }
         case"GET_ALLDATA":
         return {
-            ...state,
+            // ...state,
             allData:action.payload
         }
         case "GET_ALLDATA_NAV":

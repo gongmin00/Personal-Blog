@@ -9,6 +9,10 @@ const client = contentful.createClient({
 const GlobalState = () => {
 
     const dispatch = useDispatch()
+    useEffect(() => {
+        const res = client.getEntries().then(dataItem =>dispatch({type:"GET_ALLDATA",payload:dataItem.items}))
+        //promise里面的值没法return，只能用Then的方法传递
+    },[])
 
     const res = client.getEntries().then(dataItem => dispatch({ type: "GET_ALLDATA", payload: dataItem.items }))
     //promise里面的值没法return，只能用Then的方法传递

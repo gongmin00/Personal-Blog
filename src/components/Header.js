@@ -2,6 +2,7 @@ import React, { Fragment } from "react"
 import "../style/nav.scss"
 import { SearchIcon, LogoIcon } from "./FontIcon"
 import { Link, useStaticQuery, graphql } from "gatsby"
+import { useSelector } from "react-redux"
 
 
 
@@ -41,7 +42,8 @@ const Header = () => {
     //             <Link to="contact"><input className="nav-item" type="button" value="Contact" /></Link>
     //         </div>
     // )
-
+    const test = useSelector(state=>state.allData)
+    console.log("this is test",test)
     return (
         <Fragment>
             <div className="nav">

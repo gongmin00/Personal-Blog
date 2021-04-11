@@ -2,8 +2,8 @@ import React from "react"
 import Header from "../components/Header"
 import {createStore} from "redux"
 import {Provider} from "react-redux"
-import GlobalState from "../redux/GlobalState"
 import allReducer from "../redux/allReducer"
+import Test from "./Test"
 
 
 
@@ -14,7 +14,7 @@ export default ()=>{
     return(
         <Provider store={myStore} >
             <Header/>
-            <GlobalState/>
+            <Test />
         </Provider>
     )
 }
